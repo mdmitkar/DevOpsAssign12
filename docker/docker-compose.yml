@@ -1,8 +1,8 @@
+version: '3.8'
+
 services:
   web:
-    build:
-      context: ..
-      dockerfile: docker/Dockerfile.web
+    image: myapp-web:latest
     volumes:
       - ../:/app
     ports:
@@ -14,9 +14,11 @@ services:
       - POSTGRES_HOST=db
       - POSTGRES_PORT=5432
     command: sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
-    depends_on:
-      db:
-        condition: service_healthy
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    # depends_on is ignored by Swarm; removed conditional form
     networks:
       - app-network
 
@@ -42,4 +44,4 @@ volumes:
 
 networks:
   app-network:
-    driver: bridge
+    driver: overlay
