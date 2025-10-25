@@ -146,55 +146,9 @@ python selenium/test_app.py
 - **Region:** us-east-1
 - **OS:** Ubuntu 20.04 LTS
 
-## 📊 Features Implemented
 
-### ✅ Django Application (20/20 points)
-- [x] Login page with username/password
-- [x] Registration page
-- [x] Home page displaying username
-- [x] Logout functionality
-- [x] PostgreSQL database integration
-- [x] Custom authentication against `login` table
 
-### ✅ Docker Swarm (20/20 points)
-- [x] Docker Compose configuration
-- [x] 2 web service replicas
-- [x] PostgreSQL service
-- [x] Overlay network for multi-node communication
-- [x] Volume persistence for database
 
-### ✅ Terraform (20/20 points)
-- [x] 4 EC2 instances (t2.micro)
-- [x] Security groups with required ports
-- [x] Elastic IPs for static public IPs
-- [x] Auto-generated SSH key pair
-- [x] Output public IPs
-
-### ✅ Ansible (20/20 points)
-- [x] Docker installation playbook
-- [x] Docker Swarm cluster setup
-- [x] Application deployment playbook
-- [x] Inventory file with IPs
-- [x] Complete automation pipeline
-
-### ✅ CI/CD (20/20 points)
-- [x] GitHub Actions workflow
-- [x] Jenkins pipeline
-- [x] Automated testing
-- [x] Docker image building
-- [x] Deployment automation
-
-## 🎯 Assignment Requirements Met
-
-| Requirement | Status | Points |
-|-------------|--------|--------|
-| Django login/register/home/logout | ✅ Complete | 20/20 |
-| PostgreSQL with login table | ✅ Complete | 20/20 |
-| Docker Swarm with 2 replicas | ✅ Complete | 20/20 |
-| Terraform infrastructure | ✅ Complete | 20/20 |
-| Ansible configuration | ✅ Complete | 20/20 |
-| CI/CD pipeline | ✅ Complete | 20/20 |
-| **TOTAL** | | **100/100** |
 
 ## 🔍 Monitoring & Management
 
